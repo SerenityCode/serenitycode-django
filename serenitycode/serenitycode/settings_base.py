@@ -22,6 +22,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
+    'pages',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,3 +62,6 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
