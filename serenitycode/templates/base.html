@@ -4,10 +4,17 @@
     <head>
         <title>Serenitycode.co.uk</title>
         <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-        {% block body %}
-            <p>Text</p>
-        {% endblock %}
+        {% include "header.html" %}
+        <div id="body-container">
+            <div id="content">
+            {% block body %}
+
+            {% endblock %}
+            </div>
+        </div>
+        {% include "footer.html" %}
     </body>
 </html>
