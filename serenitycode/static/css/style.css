@@ -77,11 +77,11 @@ footer a{
     text-decoration: none;
 }
 
-#content .post-excerpt{
+#content .post-excerpt, #content .post{
     margin-bottom: 20px;
 }
 
-#content .post-excerpt h1{
+#content .post-excerpt h1, #content .post h1{
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 15px;
@@ -92,12 +92,13 @@ footer a{
     text-decoration: none;
 }
 
-#content .post-excerpt p{
+#content .post-excerpt p, #content .post p{
     font-size: 22px;
     padding: 10px 0;
 }
 
-#content .post-excerpt p.date{
+#content .post-excerpt p.date, #content .post p.date{
     font-size: 14px;
     color: #929090;
 }
+

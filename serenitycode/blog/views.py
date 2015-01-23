@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from .models import Post
+from django.shortcuts import get_object_or_404
 
 
-def post_list(request):
-    posts = Post.objects.all()
-    context = {}
-    context['posts'] = posts
-    return render(request, "blog/post_list.html", context)
+def post(request, post_id):
+    post = get_object_or_404(Post, id=post_id)
+    context = {'post': post}
+    return render(request, "blog/post.html", context)

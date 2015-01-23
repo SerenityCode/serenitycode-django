@@ -3,8 +3,8 @@
 {% block body %}
     {% for post in posts %}
         <section class="post-excerpt">
-            <h1><a href="">{{post.title}}</a></h1>
-            <p>{{post.text|truncatewords:25}} <a href="">»</a></p>
+            <h1><a href="{% url 'view_post' post.id %}">{{post.title}}</a></h1>
+            <p>{{post.text|truncatewords:25}} <a href="{% url 'view_post' post.id %}">»</a></p>
             <p class="date">Jeffrey Whitehead | {{post.publish_date|date:"F j Y"}}</p>
         </section>
     {% endfor %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block body %}
+        <section class="post">
+            <h1>{{post.title}}</h1>
+            <p>{{post.text}}</p>
+            <p class="date">Jeffrey Whitehead | {{post.publish_date|date:"F j Y"}}</p>
+        </section>
+{% endblock body %}
