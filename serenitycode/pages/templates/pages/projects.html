@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+        <section class="projects">
+            {% for project in projects %}
+                <section class="project">
+                    <h2>{{project.title}}</h2>
+                    <p>{{project.text}}</p>
+                    <a href="{{project.link}}">View this project »</a>
+                </section>
+            {% endfor %}
+        </section>
+{% endblock body %}

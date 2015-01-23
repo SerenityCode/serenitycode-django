@@ -27,6 +27,7 @@ header{
     background-color: rgba(147, 128, 108, 0.09);
     padding: 20px;
     border-bottom: #DCD6D6;
+    min-height: 48px;
 }
 
 header a{
@@ -63,6 +64,7 @@ header .top-nav li a{
 footer{
     background-color: #404040;
     padding: 20px;
+    min-height: 52px;
 }
 
 footer p{
@@ -102,3 +104,24 @@ footer a{
     color: #929090;
 }
 
+#content .projects h2{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+#content .projects p{
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+#content .projects a{
+    color: black;
+    float: right;
+    text-decoration: none;
+}
+
+#content .project{
+    display: block;
+    padding-bottom: 25px;
+}

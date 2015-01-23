@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 
+
 class Post(models.Model):
     created_at = models.DateTimeField(editable=False, null=True)
     last_modified = models.DateTimeField()
