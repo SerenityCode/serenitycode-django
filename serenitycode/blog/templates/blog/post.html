@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% load markdown %}
 
 {% block body %}
         <section class="post">
             <h1>{{post.title}}</h1>
-            <p>{{post.text}}</p>
+            <p>{{post.text|markdown}}</p>
             <p class="date">Jeffrey Whitehead | {{post.publish_date|date:"F j Y"}}</p>
         </section>
 {% endblock body %}
